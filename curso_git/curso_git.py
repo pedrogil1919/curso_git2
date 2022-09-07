@@ -50,4 +50,6 @@ while True:
         x, y, a = girar_derecha(x, y, a)
     elif instruccion == 'I':
         x, y, a = girar_izquierda(x, y, a)
+    else:
+        print("Instrucción incorrecta.")
         
