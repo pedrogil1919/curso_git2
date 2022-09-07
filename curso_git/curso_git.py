@@ -40,6 +40,7 @@ x = 0
 y = 0
 a = 'N'
     
+# Aquí comienza el bucle principal
 while True:
     "Bucle principal"
     instruccion = input("Siguiente instrucción:")
