@@ -18,14 +18,14 @@ def retroceder(x, y, a):
     elif a == 'O': x += 1
     return x, y, a
     
-def girar_izquierda(x, y, a):
+def girar_derecha(x, y, a):
     if a == 'N': a = 'E'
     elif a == 'E': a = 'S'
     elif a == 'S': a = 'O'
     elif a == 'O': a = 'N'
     return x, y, a
     
-def girar_derecha(x, y, a):
+def girar_izquierda(x, y, a):
     if a == 'N': a = 'O'
     elif a == 'O': a = 'S'
     elif a == 'S': a = 'E'
