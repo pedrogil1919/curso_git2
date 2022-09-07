@@ -3,6 +3,7 @@ Created on 7 sept 2022
 
 @author: pedro.gil
 '''
+
       
 def avanzar(x, y, a):
     'Avanzar una unidad'
@@ -35,6 +36,8 @@ def girar_izquierda(x, y, a):
     elif a == 'S': a = 'E'
     elif a == 'E': a = 'N'
     return x, y, a
+
+print("Inicio de programa")
 
 x = 0
 y = 0
