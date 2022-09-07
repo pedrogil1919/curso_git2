@@ -3,8 +3,9 @@ Created on 7 sept 2022
 
 @author: pedro.gil
 '''
-
+      
 def avanzar(x, y, a):
+    'Avanzar una unidad'
     if a == 'N': y += 1
     elif a == 'S': y -= 1
     elif a == 'E': x += 1
@@ -12,6 +13,7 @@ def avanzar(x, y, a):
     return x, y, a
     
 def retroceder(x, y, a):
+    'Retroceder una unidad'
     if a == 'N': y -= 1
     elif a == 'S': y += 1
     elif a == 'E': x -= 1
@@ -19,6 +21,7 @@ def retroceder(x, y, a):
     return x, y, a
     
 def girar_derecha(x, y, a):
+    'Girar a la derecha'
     if a == 'N': a = 'E'
     elif a == 'E': a = 'S'
     elif a == 'S': a = 'O'
@@ -26,6 +29,7 @@ def girar_derecha(x, y, a):
     return x, y, a
     
 def girar_izquierda(x, y, a):
+    'Girar a la izquierda'
     if a == 'N': a = 'O'
     elif a == 'O': a = 'S'
     elif a == 'S': a = 'E'
@@ -37,7 +41,7 @@ y = 0
 a = 'N'
     
 while True:
-    
+    "Bucle principal"
     instruccion = input("Siguiente instrucción:")
     print("Instrucción solicitada:", instruccion)
     if instruccion == "Q":
